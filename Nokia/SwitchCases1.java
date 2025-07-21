@@ -1,5 +1,5 @@
 import java.util.Scanner;
- public class SwitchCases {
+ public class SwitchCases1 {
 public static void main(String [] args) {
  Scanner input = new Scanner(System.in);
 
@@ -63,16 +63,7 @@ public static void main(String [] args) {
                break;
        case 7: System.out.println("Send business card");
                break;
-       case 9: System.out.println("Speed dials");
-               break;
-      case 10: System.out.println("Voice tags");
-               break;
-       case 11: System.out.println(reading);
-               break;
-                  
-                
-
-       case 8 : System.out.println("Options");
+         case 8 : System.out.println("Options");
               System.out.println("""
               1-> Type of view
               2-> Memory status
@@ -88,62 +79,28 @@ public static void main(String [] args) {
              case 3 : System.out.println(phoneBook);
                        viewMemory = input.nextInt(); break;
             default : 
-                  System.out.println("Invalid input");
-                  }
-           
-                        switch(viewMemory){
-       case 1: System.out.println("Search");
-               break;
-        case 2: System.out.println("Service Nos");
-               break;
-       case 3: System.out.println("Add name");
-               break;
-       case 4: System.out.println("Erase");
-               break;
-       case 5: System.out.println("Edit");
-               break;
-      case 6: System.out.println("Assign tone");
-               break;
-       case 7: System.out.println("Send business card");
-               break;
+                  System.out.println("Invalid input");}
+                  break;
+       
+
        case 9: System.out.println("Speed dials");
                break;
       case 10: System.out.println("Voice tags");
                break;
        case 11: System.out.println(reading);
                break;
-       case 8 : System.out.println("Options");
-              System.out.println("""
-              1-> Type of view
-              2-> Memory status
-              3-> Previous
-              """) ;
-              
-                viewMemory1 = input.nextInt();
-            switch(viewMemory1) {
-             case 1 : System.out.println("Type of view");
-             break;
-             case 2 : System.out.println("Memory status");
-             break;
-             case 3 : System.out.println(phoneBook); break;
-                   viewMemory = input.nextInt(); break;
-           default : 
+       default : 
                   System.out.println("Invalid input");
-
+                  
                   }
+                  }
+          
+             
+                  
+                
 
-             break;
-            default : 
-                  System.out.println("Invalid input"); 
-              }  
-                break;
-         default : 
-                  System.out.println("Invalid input");
-
-             }
-                    
-                     
-                 switch (option) {
+                                 
+     switch (option) {
     case 2 :    System.out.println("""
                 1-> Write messages
                 2-> Inbox
@@ -177,8 +134,10 @@ public static void main(String [] args) {
                break;
           case 10: System.out.println("Service command editor");
                break;
-               }
-                   switch(setCommon) {
+               default : System.out.println("Invalid input");
+               break;
+               }          
+                  switch(setCommon) {
            case 7 : System.out.println("Messages settings");
                   System.out.println("""
                   1-> Set
@@ -204,8 +163,12 @@ public static void main(String [] args) {
              break;
              
              case 3 : System.out.println("Message validity");
-             break;}
              break;
+             default : System.out.println("Invalid input");
+             }
+             break;
+             
+             
 
           case 2 : System.out.println("Common");
                    System.out.println("""
@@ -221,18 +184,19 @@ public static void main(String [] args) {
                    break;
                    case 3 : System.out.println("Character support");
                    break;
-                  
-                    }
-                     }
-                 } 
+			   default : System.out.println("Invalid input");}
+                   break;
+          default : System.out.println("Invalid input");}
+          break;               }
+          }
+                 
+                 
               
-              }   
+               
                                           
                  switch (option) {   
      case 3 : System.out.println("Chat");
-                                break;   
-                         
-              }
+                                break;}
                switch (option) {  
      case 4 : System.out.println("Call register");
               System.out.println("""
@@ -258,7 +222,8 @@ public static void main(String [] args) {
                break;
            case 8: System.out.println("Prepaid credit");
                break;
-               }
+           default : System.out.println("Invalid input");}
+                    
                        switch(showCallCost) {
              case 5 : System.out.println("""
                     1-> Last call duration
@@ -279,9 +244,9 @@ public static void main(String [] args) {
              case 4 : System.out.println("Dialled calls' duration");
              break;
              case 5 : System.out.println("Clear counters");
-             break;}
-              break;
-                     }
+             break;
+             default : System.out.println("Invalid input");}
+              break;}
                        switch(showCallCost) {
               case 6 : System.out.println("""
                    1-> Last call cost
@@ -295,8 +260,9 @@ public static void main(String [] args) {
              case 2 : System.out.println("All calls' cost");
              break;
              case 3 : System.out.println("Clear counters");
-             break; }  
-                 break;
+             break; 
+              default : System.out.println("Invalid input");}
+                break;
                      }
                      switch(showCallCost) {
                 case 7 : System.out.println("""
@@ -308,7 +274,8 @@ public static void main(String [] args) {
              case 1 : System.out.println("Call cost limit");
              break;
              case 2 : System.out.println("Show costs in");
-             break;}
+             break;
+             default : System.out.println("Invalid input");}
                     break;
                     }
                     }
@@ -347,10 +314,10 @@ public static void main(String [] args) {
                  case 8: System.out.println("Vibrating alert");
                      break;
                  case 9: System.out.println("Screen saver");
-                     break;}
-
-                      break;
-                 }
+                     break;
+                 default : System.out.println("Invalid input");}
+                     break;
+                      }
                  
                  
                  switch(option) {
@@ -365,7 +332,8 @@ public static void main(String [] args) {
                    int callPhoneSec = input.nextInt();
                     switch(callPhoneSec) {
                         case 4: System.out.println("Restore factory settings");
-                      break;}
+                      break;
+                       default : System.out.println("Invalid input");}
                       
                        switch(callPhoneSec) {
                      case 1 : System.out.println("""
@@ -389,7 +357,8 @@ public static void main(String [] args) {
                            case 5 : System.out.println("Phone line in use");
                                 break;
                            case 6 : System.out.println("Automatic answer"); 
-                                break;}
+                                break;
+                            default : System.out.println("Invalid input");}
                                  break;
                                  }
                        
@@ -415,9 +384,9 @@ public static void main(String [] args) {
                            case 5 : System.out.println("Lights");
                                 break;
                            case 6 : System.out.println("Confirm SIM service actions"); 
-                                break;}
-
-                              break;}
+                                break;
+                            default : System.out.println("Invalid input");}
+                               break;}
                               
                     switch(callPhoneSec) {
                         case 3 : System.out.println("""
@@ -441,9 +410,9 @@ public static void main(String [] args) {
                            case 5 : System.out.println("Phone security");
                                 break;
                            case 6 : System.out.println("Change access codes"); 
-                                break;}
-
-                               break;
+                                break;
+                           default : System.out.println("Invalid input");}
+						break;
                                 }
                                 }
                                 switch(option) {
@@ -464,6 +433,7 @@ public static void main(String [] args) {
                 case 10 : System.out.println("Reminders");
                               break;
                               }
+                              
                               switch(option) {
                 case 11 :   System.out.println("Clock");
                              System.out.println("""
@@ -488,8 +458,10 @@ public static void main(String [] args) {
                           case 5: System.out.println("Countdown timer");
                                  break;
                            case 6: System.out.println("Auto update of date and time");
-                                  break;}
                                   break;
+                           default : System.out.println("Invalid input");
+
+                              }
                               }
                               
                               switch(option) {
@@ -498,11 +470,8 @@ public static void main(String [] args) {
                              }
                              switch(option) {
                  case 13 :  System.out.println("SIM services");
-                            break;
-                                       
-                                   
-                                   } 
-                                   }       
-                             }
-                         }
-  
+                            break;      
+                            }                           
+                            
+                         }   
+  				}
