@@ -23,7 +23,7 @@ if(number % i == 0){
   
 //A function to check for Square true
 public static boolean CheckSquare(int number){
-if(number < 0){
+if(number <= 0){
 return false;
 }
 int squareCheck = (int) Math.sqrt(number);

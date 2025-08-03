@@ -5,5 +5,5 @@ System.out.println(Kata.FactorNumber(12));
 
 
 
-}
+} 
 }

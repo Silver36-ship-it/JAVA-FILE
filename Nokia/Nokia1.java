@@ -1,5 +1,5 @@
 import java.util.Scanner;
- public class SwitchCases1 {
+ public class Nokia1 {
 public static void main(String [] args) {
  Scanner input = new Scanner(System.in);
 
@@ -64,12 +64,12 @@ public static void main(String [] args) {
        case 7: System.out.println("Send business card");
                break;
          case 8 : System.out.println("Options");
-              System.out.println("""
+              String optionInput= """
               1-> Type of view
               2-> Memory status
               3-> Previous
-              """) ;
-              
+              """ ;
+              System.out.println(optionInput);
                 int viewMemory1 = input.nextInt();
             switch(viewMemory1) {
              case 1 : System.out.println("Type of view");
@@ -101,7 +101,7 @@ public static void main(String [] args) {
 
                                  
      switch (option) {
-    case 2 :    System.out.println("""
+    case 2 :    String message = """
                 1-> Write messages
                 2-> Inbox
                 3-> Outbox
@@ -112,7 +112,8 @@ public static void main(String [] args) {
                 8-> Info service
                 9-> Voice mailbox number
                 10-> Service command editor
-                  """) ;
+                  """ ;
+                  System.out.println(message);
              System.out.println("Choose an option");
               int setCommon = input.nextInt();
             switch(setCommon){
@@ -139,11 +140,11 @@ public static void main(String [] args) {
                }          
                   switch(setCommon) {
            case 7 : System.out.println("Messages settings");
-                  System.out.println("""
+                  String setMessage = """
                   1-> Set
                   2-> Common
-                  """) ;
-                 
+                  """ ;
+                 System.out.println(setMessage);
                  System.out.println("Enter option");
                     int setCommon1 = input.nextInt();
                    switch(setCommon1){
